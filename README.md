@@ -28,7 +28,21 @@ sudo ifconfig sl0 192.168.5.2 pointopoint 192.168.5.1 up
 ```php
 ping 192.168.5.1 
 ```
-6) поднимаем на Raspberry `telnet` и подключаемся 
+
+6) добавляем конфиг в `/etc/network/interfaces`
+
+```php
+auto sl0
+ iface sl0 inet static
+ address 192.168.5.1
+ netmask 255.255.255.255
+ pointopoint 192.168.5.2
+ pre-up /sbin/slattach -p slip -s 19200 /dev/ttyUSB0 &
+ post-up /sbin/ip route add 1.1.1.1 dev sl0
+ #post-down /usr/bin/killall slattach
+```
+
+7) поднимаем на Raspberry `telnet` и подключаемся 
 
 `telnet 192.168.5.1`
 

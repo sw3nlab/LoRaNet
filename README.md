@@ -7,7 +7,7 @@ LoRa point to point network
 
 Один подключен к нетбуку (Debian GNU/Linux)
 
-![image](https://github.com/sw3nlab/LoRaNet/blob/master/img.jpg)
+![image](https://raw.githubusercontent.com/sw3nlab/LoRaNet/main/img.jpg)
 
 
 второй к Raspberry Pi (Raspbian)

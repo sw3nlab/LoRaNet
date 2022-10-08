@@ -33,6 +33,8 @@ https://youtu.be/z7isqsBQ3kc
 
 
 ```php
+sudo apt-get update
+sudo apt-get install net-tools
 sudo slattach -d -p slip -s 19200 /dev/ttyUSB0
 sudo ifconfig sl0 192.168.5.2 pointopoint 192.168.5.1 up
 ```

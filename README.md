@@ -41,7 +41,7 @@ sudo slattach -d -p slip -s 19200 /dev/ttyUSBX
 sudo ifconfig sl0 192.168.5.2 pointopoint 192.168.5.1 up
 ```
 
-где `/dev/ttyUSBX` -> usb ttl адаптер с припаеной лорой
+где `/dev/ttyUSBX` -> USB TTL адаптер с припаеной лорой
 
 на модуле который подключен к Raspberry Pi, делаем тоже самое только, меняем местами `192.168.5.2` и `192.168.5.1`
 

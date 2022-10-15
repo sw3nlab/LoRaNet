@@ -1,9 +1,7 @@
 # LoRaNet
 LoRa point to point network
 
-Организация сети (точка - точка) на радиомодулях **LoRa ebyte e32** 
-
-![image](https://raw.githubusercontent.com/sw3nlab/LoRaNet/main/5167UiNMl2L._AC_SX425_.jpg)
+Организация сети (точка - точка) на радиомодулях **LoRaNet** 
 
 В данном примере используется 2 модуля LoRa e32 (433MHz)
 
